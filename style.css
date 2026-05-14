@@ -180,15 +180,13 @@ body .last-child {
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
     .grid-body {
         grid-template-columns: repeat(5, 180px);
-        /* پنج ستون */
         grid-template-rows: repeat(2, 340px);
-        /* دو ردیف */
         gap: 10px;
         justify-content: center;
         height: auto;
     }
 
-    /* فقط 10 کارت اول دیده بشن */
+
     .grid-body .card:nth-child(n+11) {
         display: none;
     }

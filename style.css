@@ -1,0 +1,197 @@
+@font-face {
+    font-family: fnormal;
+    src: url(Font/normal.woff2);
+}
+
+@font-face {
+    font-family: fbold;
+    src: url(Font/bold.woff2);
+}
+
+* {
+    font-family: fnormal;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 35px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logo a img {
+    width: 47px;
+}
+
+.header .logo a:last-child {
+    font-family: fbold;
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+    padding-bottom: 7px;
+}
+
+.btn-login {
+    font-family: fbold;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* End-header */
+
+/* navbar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 0px;
+    font-family: fbold;
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    padding-right: 35px;
+}
+
+.nav span div span {
+    cursor: pointer;
+}
+
+.nav span div span:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* End-navbar */
+
+
+/* main */
+body .last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.container {
+    height: 100vh;
+    background-color: #f1f5f9;
+    padding: 15px 35px;
+    border-radius: 2px;
+    margin-left: 35px;
+}
+
+.r-side {
+    width: 100%;
+    position: sticky;
+    top: 20px;
+    align-self: start;
+}
+
+
+.main-head {
+    border-bottom: 1px solid rgb(177, 177, 177);
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+.main-body p {
+    font-size: 20px;
+    font-family: fbold;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: repeat(8, 180px);
+    grid-template-rows: repeat(2, 340px);
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 180px;
+    height: 340px;
+    gap: 20px;
+    background: white;
+    border-radius: 10px;
+    font-family: fnormal;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.botton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.down-botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+/* End-main */
+
+
+/* footer */
+.filters {
+    font-family: fnormal;
+    padding: 20px 10px;
+    font-size: 17px;
+    width: 100%;
+    border-radius: 2px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+/* End-footer */
+
+
+
+/* Responsive */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .grid-body {
+        grid-template-columns: repeat(5, 180px);
+        /* پنج ستون */
+        grid-template-rows: repeat(2, 340px);
+        /* دو ردیف */
+        gap: 10px;
+        justify-content: center;
+        height: auto;
+    }
+
+    /* فقط 10 کارت اول دیده بشن */
+    .grid-body .card:nth-child(n+11) {
+        display: none;
+    }
+}
+
+/* End-Responsive */

@@ -145,6 +145,7 @@ body .last-child {
 
 
 
+
 .main-body p {
     font-size: 20px;
     font-family: fbold;
@@ -161,6 +162,7 @@ body .last-child {
 
 .card {
     display: flex;
+    position: relative;
     justify-content: start;
     align-items: center;
     flex-direction: column;
@@ -174,6 +176,55 @@ body .last-child {
     font-weight: bold;
     padding: 10px;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.icon-card {
+    position: absolute;
+    background-color: #64748b;
+    width: 27.17px;
+    height: 16px;
+    top: 7px;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    height: 16px;
+    border-radius: 4px;
+    padding: 0 4px;
+    color: white;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.icon-card svg {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+.icon-card-down {
+    position: absolute;
+    background-color: #64748bad;
+    width: 35px;
+    top: 170px;
+    right: 6px;
+    display: flex;
+    column-gap: 2px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 0 4px;
+    color: white;
+    font-size: 10px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-card-down svg {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
 }
 
 .botton {

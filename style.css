@@ -260,6 +260,31 @@ body .last-child {
 
 
 /* Responsive */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .grid-body {
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(3, 340px);
+        gap: 10px;
+        justify-content: center;
+        height: auto;
+    }
+
+
+    .grid-body .card:nth-child(n+11) {
+        display: none;
+    }
+
+    .nav .nav7,
+    .nav .nav8,
+    .nav .nav9,
+    .nav .nav10,
+    .nav .nav11 {
+        display: none;
+    }
+
+
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
     .grid-body {
         grid-template-columns: repeat(5, 180px);
@@ -271,6 +296,26 @@ body .last-child {
 
 
     .grid-body .card:nth-child(n+11) {
+        display: none;
+    }
+
+    .nav .nav7,
+    .nav .nav8 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .grid-body {
+        grid-template-columns: repeat(6, 180px);
+        grid-template-rows: repeat(2, 340px);
+        gap: 10px;
+        justify-content: center;
+        height: auto;
+    }
+
+
+    .grid-body .card:nth-child(n+13) {
         display: none;
     }
 }
